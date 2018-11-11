@@ -7,7 +7,7 @@ import New from './pages/New'
 const Routes = createStackNavigator({
     Login,
     Timeline,
-    New
+    New,
 });
 
 export default Routes;

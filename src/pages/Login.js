@@ -47,7 +47,8 @@ export default class Login extends Component {
         NavigationActions.navigate({ routerName: 'Timeline' })
       ]
     })
-    this.props.navigation.dispatch(resetAction)
+    this.props.navigation.navigate('Timeline')
+    //this.props.navigation.dispatch(resetAction)
   }
 
   handleInputChange = username => {
@@ -65,7 +66,7 @@ export default class Login extends Component {
               style={styles.input}
               placeholder="Nome de usuario"
               value={this.state.username}
-              onChangeText={this.handleIputChange}
+              onChangeText={this.handleInputChange}
               returnKeyType="send"
               onSubmitEditing={this.handleLogin}
             />
